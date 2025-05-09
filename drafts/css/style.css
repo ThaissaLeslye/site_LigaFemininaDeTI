@@ -1,0 +1,29 @@
+@import url(variables.css);
+@import url(reset.css);
+@import url(components.css);
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  
+  .gallery-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
