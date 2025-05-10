@@ -1,0 +1,16 @@
+/* Remove margens, paddings e bordas padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Remove decoração de links */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+body {
+  font-family: var(--main-font);
+}

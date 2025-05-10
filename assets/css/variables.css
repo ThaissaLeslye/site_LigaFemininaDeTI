@@ -1,0 +1,28 @@
+:root {
+	/* COLORS */
+	--color-background: #f7f5eb;
+	--color-highlight: #fff8f0;
+  
+	--color-theme: #58209a;
+	--color-theme-light: #9b5de5;
+	--color-theme-lighter: #c396f7;
+	--color-accent: #c1ff72;
+  
+	--color-dark-purple-overlay: #201131bf;
+  
+	--color-medium-grey: #3b3b3b;
+	--color-text: #201e24;
+
+	/* TYPOGRAPHY */
+	--main-font: "Poppins", sans-serif;
+	--text-xl: 32px; /* Título principal */
+	--text-lg: 24px; /* Subtítulo */
+	--text-md: 20px; /* Destaque ou lead */
+	--text-base: 16px; /* Texto normal */
+
+	/*SIZES*/
+	--title-line-lg: 325px;
+	--title-line-md: 120px;
+	--title-line-sm: 45px;
+	
+}
