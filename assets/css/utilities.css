@@ -1,0 +1,37 @@
+/* ALIGMENTS */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.flex { display: flex; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+
+/* TITLES */
+.cover-title {font-size: var(--text-xxl); font-weight: 900;}
+
+.section-title {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  -webkit-text-stroke: 1px black;
+}
+
+/*
+.title-line {
+  height: 1px;
+  background-color: var(--color-text);
+  border: none;
+}
+
+.title-line-md {
+  width: var(--title-line-md);
+  margin: 0 auto;
+}
+*/
+
+/* COLORS */
+.lavander { color: var(--color-theme-lighter);}
+
+.bright { color: var(--color-accent);}
+

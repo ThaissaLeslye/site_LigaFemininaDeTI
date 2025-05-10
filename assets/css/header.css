@@ -3,22 +3,17 @@
 /* Header */
 header {
     width: 100vw;
-    height: 80px;
-    padding: 0 15vw;
+    height: var(--height-header);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 
     background-color: var(--color-background);
 }
 
 /* Title */
-.header-title {
-    display: flex;
-    align-items: center;
-}
-
 .header-title > .logo {
     width: 70px;
 }
@@ -52,7 +47,6 @@ header {
     border-radius: 10px;
     
     font-size: 14px;
-    list-style: none;
     text-align: start;
 }
 

@@ -1,16 +1,18 @@
-/* Remove margens, paddings e bordas padrão */
+/* Removing margins, paddings and borders */
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-/* Remove decoração de links */
-a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-body {
-  font-family: var(--main-font);
+	padding: 0;
+	box-sizing: border-box;
 }
+
+/* Removing decorations */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+

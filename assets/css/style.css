@@ -2,4 +2,58 @@
 @import url(header.css);
 @import url(variables.css);
 @import url(reset.css);
-@import url(components.css);
+@import url(utilities.css);
+
+/* ---GENERAL--- */
+
+/* Defines site's font */
+body {
+	font-family: var(--main-font);
+}
+
+/* Defines the site's breathing space*/
+header,
+main > section,
+footer {
+	padding: 0 15vw;
+}
+
+/* Prevents the header from covering the main */
+main {
+	padding-top: var(--height-header);
+}
+
+/* ---SECTION COVER--- */
+.cover {
+    width: 100vw;
+    height: 930px;
+
+    background-image: linear-gradient(
+        var(--color-dark-purple-overlay), 
+        var(--color-dark-purple-overlay)),
+        var(--image-a-liga);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: var(--color-background);
+}
+
+.container-title {
+    width: fit-content;
+    height: 55%;
+    margin: 0 auto;
+
+    flex-direction: column;
+    justify-content: end;
+}
+
+.social-media {
+    padding-top: 10px;
+    justify-content: end;
+}
+
+.a-liga .social-media > ul > li{
+    padding-left: 10px;
+    display: inline;
+}
+
