@@ -1,0 +1,55 @@
+/* HEADER */
+
+/* Header */
+header {
+    width: 100vw;
+    height: var(--height-header);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    background-color: var(--color-background);
+}
+
+/* Title */
+.header-title > .logo {
+    width: 70px;
+}
+
+.header-title > .title {
+    padding-top: 5px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Menu Nav */
+.header-menu {
+    width: 40vw;
+}
+
+.header-menu > ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+
+    list-style: none;
+} 
+
+/* Menu > Dropdown */
+.header-menu .dropdown {
+    display:none;
+    position: absolute;
+    padding: 10px 10px 10px 15px;
+
+    background-color: var(--color-background);
+    border-radius: 10px;
+    
+    font-size: 14px;
+    text-align: start;
+}
+
+.item-dropdown:hover .dropdown {
+    display: block;
+}

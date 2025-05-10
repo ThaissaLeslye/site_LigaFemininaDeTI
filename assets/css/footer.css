@@ -1,0 +1,24 @@
+/* FOOTER */
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 240px;
+
+    flex-direction: column;
+    
+    background-color: var(--color-background);
+}
+
+/* Main content*/
+.footer-content {
+    height: 90%;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+/* Copyrights */
+.footer-rights {
+    text-align: center;
+    font-size: 14px;
+}
