@@ -1,0 +1,33 @@
+/* FOOTER */
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 240px;
+    padding: 0 15vw;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--color-background);
+}
+
+/* Main content*/
+.footer-content {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu Nav */
+.footer-menu > ul {
+    list-style: none;
+}
+
+/* Copyrights */
+.footer-rights {
+    text-align: center;
+    font-size: 14px;
+}
