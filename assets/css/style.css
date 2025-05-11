@@ -1,3 +1,4 @@
+@import url(a-liga.css);
 @import url(footer.css);
 @import url(header.css);
 @import url(variables.css);
@@ -9,18 +10,34 @@
 /* Defines site's font */
 body {
 	font-family: var(--main-font);
+    background-color: var(--color-background);
+    font-size: var(--text-md);
 }
 
 /* Defines the site's breathing space*/
 header,
 main > section,
 footer {
-	padding: 0 15vw;
+	padding-right: 15vw;
+    padding-left: 15vw;
 }
 
 /* Prevents the header from covering the main */
-main {
+main, section {
 	padding-top: var(--height-header);
+}
+
+section {
+    min-height: fit-content;
+    height: 100vh;
+
+    border-bottom: 1px solid black;
+}
+
+button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
 }
 
 /* ---SECTION COVER--- */

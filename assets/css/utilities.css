@@ -1,14 +1,19 @@
 /* ALIGMENTS */
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-justify {text-align: justify;}
 
 .flex { display: flex; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
+.row { display: flex; flex-direction: row;}
+.column { display: flex; flex-direction: column;}
 
 /* TITLES */
 .cover-title {font-size: var(--text-xxl); font-weight: 900;}
 
-.section-title {
+.main-title {
+  padding-bottom: 20px;
+
   font-size: var(--text-xl);
   font-weight: 900;
   text-transform: uppercase;
@@ -35,3 +40,19 @@
 
 .bright { color: var(--color-accent);}
 
+/* CARDS */
+.card {
+  background-color: var(--color-highlight);
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 25px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: justify;
+}
+
+/* ELIPSES */
