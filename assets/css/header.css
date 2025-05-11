@@ -5,9 +5,7 @@ header {
     width: 100vw;
     height: var(--height-header);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
     position: fixed;
 
     background-color: var(--color-background);
