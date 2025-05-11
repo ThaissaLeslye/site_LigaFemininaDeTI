@@ -1,0 +1,73 @@
+/* A LIGA */
+
+/* Sobre */
+.a-liga > .sobre > .content {
+    width: 60vw;
+
+    flex-direction: column;
+}
+
+.a-liga > .sobre > .content > img {
+    padding-bottom: 50px;
+}
+
+.a-liga > .sobre > .content > .text {
+    padding-bottom: var(--height-header);
+}
+
+/* Valores */
+.a-liga > .valores > .content {
+    width: 70vw;
+
+    padding-bottom: var(--height-header);
+}
+
+.a-liga > .valores .card-visao {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.a-liga > .valores .card-missao {
+    width: 40%;
+    margin-right: 3%;
+}
+
+.a-liga > .valores .card-valores {
+    width: 57%;
+    padding-right: 25px;
+}
+
+/* Card valores ---Card slide */
+.card-valores .next-btn {
+    padding-left: 25px;
+}
+
+.card-valores .card-text {
+    display: none;
+}
+
+.card-valores .card-text.active {
+    display: block;
+}
+
+.card-valores .elipses {
+    width: 50px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.card-valores .elipse {
+    height: 18px;
+    width: 18px;
+
+    background-color: var(--color-background);
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.card-valores .elipse.active {
+    height: 20px;
+    width: 20px;
+
+    background-color: var(--color-accent);
+}
