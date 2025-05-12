@@ -43,7 +43,7 @@ button {
 /* ---SECTION COVER--- */
 .cover {
     width: 100vw;
-    height: 930px;
+    height: calc(100vh - var(--height-header));
 
     background-image: linear-gradient(
         var(--color-dark-purple-overlay), 

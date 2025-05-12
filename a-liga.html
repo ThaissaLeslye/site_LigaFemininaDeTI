@@ -10,7 +10,7 @@
 			<div class="social-media flex">
 				<ul>
 					<li>
-						<a href="https://www.instagram.com/liga_femininadeti/">
+						<a href="https://www.instagram.com/liga_femininadeti/ " target="_blank">
 							<img
 								src="/assets/images/insta-icon.png"
 								alt="icone instagram"
@@ -18,7 +18,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="***LINK AQUI***">
+						<a href="***LINK AQUI***" target="_blank">
 							<img
 								src="/assets/images/github-icon.png"
 								alt="icone github"
@@ -27,7 +27,7 @@
 					</li>
 					<li>
 						<a
-							href="https://www.linkedin.com/in/liga-feminina-de-ti-918068308/"
+							href="https://www.linkedin.com/in/liga-feminina-de-ti-918068308/" target="_blank"
 						>
 							<img
 								src="/assets/images/linkdin-icon.png"
@@ -116,7 +116,11 @@
 					<h1 class="main-title lavander">VALORES</h1>
 
                     </div>
-					<div class="row flex-center">
+					<div class="row flex-center">				
+						<div id="next-btn1" class="next-btn" onclick="changeSlide()">
+							<img src="/assets/images/button-left.png" />
+						</div>
+
 						<div id="text1" class="card-text active">
 							<p>
 								<b>Inclusão e Diversidade:</b> Valorizamos a
@@ -162,7 +166,7 @@
 								princípios.
 							</p>
 						</div>
-						<div class="next-btn" onclick="toggleText()">
+						<div id="next-btn2" class="next-btn active" onclick="changeSlide()">
 							<img src="/assets/images/button-right.png" />
 						</div>
 					</div>
@@ -176,5 +180,29 @@
 		</div>
 	</section>
 
-	<section></section>
+	<section id="a-liga-destaques" class="destaques flex-center">
+		<div class="content">
+			<h1 class="main-title lavander">DESTAQUES</h1>
+			<div class="row">
+				<div class="card card-destaques">
+					<h2 class="main-title bright">Treinamentos em Programação Web para Mulheres</h2>
+					<div class="column flex-center">
+						<p>Em 2025, realizamos oficinas exclusivas para mulheres através do programa Futuras Cientistas, aprovado pelo CNPq em parceria com a UVV.</p>
+						<a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/" target="_blank">
+							<button class="card-destaques-button bg-bright">Saiba Mais</button>
+						</a>
+					</div>
+				</div>
+				<div class="card card-destaques">
+					<h2 class="main-title bright">Treinamentos em Programação Web para Mulheres</h2>
+					<div class="column flex-center">
+						<p>Integrantes da Liga representaram o Espírito Santo em eventos de destaque nacional, como o Campus Mobile 2025, realizado em São Paulo.</p>
+						<a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/" target="_blank">
+							<button class="card-destaques-button bg-bright">Saiba Mais</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>

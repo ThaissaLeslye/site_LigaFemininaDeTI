@@ -36,9 +36,11 @@
 */
 
 /* COLORS */
-.lavander { color: var(--color-theme-lighter);}
+.lavander { color: var(--color-theme-lighter) !important;}
+.bg-lavander { background-color: var(--color-theme-lighter) !important;}
 
-.bright { color: var(--color-accent);}
+.bright { color: var(--color-accent) !important;}
+.bg-bright { background-color: var(--color-accent) !important; }
 
 /* CARDS */
 .card {
@@ -55,4 +57,19 @@
   text-align: justify;
 }
 
-/* ELIPSES */
+.card:hover { transform: scale(1.025); }
+
+/* BUTTONS */
+.card-destaques-button {
+  width: 105px;
+  height: 35px;
+
+  border-radius: 25px;
+  border: 1px solid black;
+
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--color-theme);
+}
