@@ -7,12 +7,13 @@ header {
 
     justify-content: space-between !important;
     position: fixed;
+    z-index: 10;
 
     background-color: var(--color-background);
 }
 
 /* Title */
-.header-title > .logo {
+.header-title .logo {
     width: 70px;
 }
 
@@ -51,4 +52,5 @@ header {
 
 .item-dropdown:hover .dropdown {
     display: block;
+    position: absolute;
 }

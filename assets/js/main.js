@@ -1,22 +1,45 @@
-async function loadComponent(id, file) {
-	  const res = await fetch(file);
-	  const content = await res.text();
-	  document.getElementById(id).innerHTML = content;
+// Insert html files into index.html
+async function loadComponent(className, file) {
+	const res = await fetch(file);
+	const content = await res.text();
+	const element = document.querySelector(`.${className}`);
+
+	if (element) {
+		element.innerHTML = content
+	}
 }
 
-loadComponent("header", "header.html");
-loadComponent("a-liga", "a-liga.html");
-loadComponent("footer", "footer.html");
+// Changes main's content calling loadComponent
+function changeMain(newClass, htmlFile) {
+  	const mainElement = document.getElementById("main");
+	if (!mainElement) return;
 
-//Slide - A Liga - Valores
-let showingFirst = true;
+	mainElement.className = newClass;
 
-function changeSlide() {
-	  document.getElementById("text1").classList.toggle("active");
-	  document.getElementById("text2").classList.toggle("active");
-    document.getElementById("elipse1").classList.toggle("active");
-    document.getElementById("elipse2").classList.toggle("active");
-	  document.getElementById("next-btn1").classList.toggle("active");
-    document.getElementById("next-btn2").classList.toggle("active");
-	  showingFirst = !showingFirst;
+	loadComponent(newClass, htmlFile);
+
+	localStorage.setItem("currentClass", newClass);
+	localStorage.setItem("currentFile", htmlFile);
+}
+
+// Keeps last main's content into storage
+function loadLastMain() {
+	const savedClass = localStorage.getItem("currentClass") || "a-liga";
+	const savedFile = localStorage.getItem("currentFile") || "a-liga.html";
+
+	const mainElement = document.getElementById("main");
+	if (!mainElement) return;
+
+	mainElement.className = savedClass;
+
+	loadComponent(savedClass, savedFile);
+}
+
+loadLastMain();
+
+// Slides
+function changeSlide(className) {
+	document.querySelectorAll(`.${className}`).forEach(element => {
+		element.classList.toggle("active");
+	});
 }

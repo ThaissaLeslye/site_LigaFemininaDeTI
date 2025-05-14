@@ -1,0 +1,6 @@
+/* INTEGRANTES */
+
+/* COVER */
+.integrantes > .cover {
+    background-image: var(--image-cover-integrantes);
+}

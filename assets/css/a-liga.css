@@ -1,5 +1,20 @@
 /* A LIGA */
 
+/* COVER */
+.a-liga > .cover {
+    background-image: var(--image-cover-a-liga);
+}
+
+.a-liga > .cover .social-media {
+    padding-top: 10px;
+    justify-content: end;
+}
+
+.a-liga > .cover .social-media > ul > li{
+    padding-left: 10px;
+    display: inline;
+}
+
 /* SOBRE */
 .a-liga > .sobre > .content {
     width: 60vw;
@@ -39,6 +54,7 @@
 /* Card valores ---Card slide */
 .card-valores .next-btn {
     display: none;
+    cursor: pointer;
 }
 
 .card-valores .next-btn.active {
