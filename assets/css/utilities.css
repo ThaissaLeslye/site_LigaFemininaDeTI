@@ -12,7 +12,7 @@
 .cover-title {font-size: var(--text-xxl); font-weight: 900;}
 
 .main-title {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 
   font-size: var(--text-xl);
   font-weight: 900;
@@ -47,6 +47,7 @@
   background-color: var(--color-highlight);
   border-radius: 20px;
   border: 1px solid black;
+  box-shadow: 1px 1px 5px var(--color-dark-purple-overlay);
   padding: 25px 50px;
 
   display: flex;

@@ -28,15 +28,15 @@ footer {
 }
 
 /* Prevents the header from covering the main */
-main, section {
-	padding-top: var(--height-header);
-}
-
 section {
     min-height: fit-content;
     height: 100vh;
 
-    border-bottom: 1px solid black;
+    box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
+    padding-bottom: 80px;
+
+    scroll-margin-top: var(--height-header);
+	padding-top: var(--height-header);
 }
 
 button {

@@ -99,7 +99,6 @@
     color: var(--color-background);
     font-size: var(--text-lg);
     font-weight: 600;
-    padding-bottom: var(--height-header);
 }
 
 .a-liga > .destaques > .content p {

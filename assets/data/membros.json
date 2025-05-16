@@ -1,0 +1,58 @@
+{
+	"membros": [
+		{
+			"nome": "Debora Rodrigues Lacerda",
+			"foto": "/assets/images/debora-rodrigues.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Isabel Valentim",
+			"foto": "/assets/images/isabel-valentim.jpg",
+            "linkedin": "https://www.linkedin.com/in/isabel-valentim-25b8581a2/",
+            "cargo": "Diretora"
+		},
+		{
+			"nome": "Lara Mendes Valin",
+			"foto": "/assets/images/lara-mendes.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Luana Teixeira da Silva",
+			"foto": "/assets/images/luana-teixeira.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Marcela R dos Santos",
+			"foto": "/assets/images/marcela-santos.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Maria Eduarda Fiorio",
+			"foto": "/assets/images/maria-fiorio.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Nikelly S J Thomaz",
+			"foto": "/assets/images/nikelly-thomaz.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+		{
+			"nome": "Suellen Miranda Amorim",
+			"foto": "/assets/images/suellen-miranda.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+		},
+        {
+            "nome": "Susi Lima",
+            "foto": "/assets/images/susi-lima.jpg",
+            "linkedin": "",
+            "cargo": "Membro"
+        }
+	]
+}

@@ -2,5 +2,80 @@
 
 /* COVER */
 .integrantes > .cover {
-    background-image: var(--image-cover-integrantes);
+	background-image: var(--image-cover-integrantes);
+}
+
+/* INTEGRANTES */
+.integrantes .painel-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+	padding-top: 30px;
+}
+
+.integrantes .painel-container .item {
+	width: 250px;
+	text-align: center;
+}
+
+.integrantes .painel-container .item h3 {
+	font-weight: normal;
+	font-size: var(--text-base);
+}
+
+.integrantes .painel-container .item span {
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+	color: var(--color-theme);
+}
+
+.integrantes .painel-container .imagem-wrapper {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transform: scale(1.05);
+}
+
+.integrantes .painel-container .item img {
+	display: block;
+	height: 180px;
+	width: 180px;
+
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.painel-container .item .overlay {
+	position: absolute;
+	width: fit-content;
+	height: 180px;
+	width: 180px;
+
+	background-color: var(--color-dark-purple-overlay);
+	color: var(--color-background);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.painel-container .item .overlay a {
+	text-decoration: underline;
+}
+
+.imagem-wrapper:hover .overlay {
+	opacity: 1;
 }
