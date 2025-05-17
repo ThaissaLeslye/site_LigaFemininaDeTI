@@ -15,6 +15,16 @@ body {
     background-color: var(--color-background);
     font-size: var(--text-md);
 
+    font-weight: 300;
+    color: var(--color-text);
+}
+
+input::placeholder, textarea::placeholder {
+	font-family: var(--main-font);
+    font-size: var(--text-md);
+}
+
+input:focus, textarea:focus {
     outline: none;
 }
 
@@ -36,10 +46,11 @@ section {
     height: 100vh;
 
     box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
+    padding-top: var(--height-header);
     padding-bottom: 80px;
 
     scroll-margin-top: var(--height-header);
-	padding-top: var(--height-header);
+	
 }
 
 button {

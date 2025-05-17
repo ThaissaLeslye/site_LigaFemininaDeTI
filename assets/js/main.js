@@ -59,13 +59,22 @@ function loadLastMain() {
 	} else if (savedCallbackName === "appendImages") {
 		savedCallback = appendImages;
 	}
+	
+	const callbackComFormulario = () => {
+		if (typeof savedCallback === 'function') {
+			savedCallback();
+		}
+		if (savedFile === 'mais.html') {
+			iniciarFormulario();
+		}
+	};
 
 	const mainElement = document.getElementById("main");
 	if (!mainElement) return;
 
 	mainElement.className = savedClass;
 
-	loadComponent(savedClass, savedFile, savedCallback);
+	loadComponent(savedClass, savedFile, callbackComFormulario);
 }
 
 // Toggle active
@@ -136,6 +145,86 @@ function appendImages() {
 		.catch((error) => {
 			console.error("Erro ao carregar imagens:", error);
 		});
+}
+
+//FIQUE POR DENTRO form -> sheets
+function iniciarFormulario() {
+  const form = document.getElementById("ligaForm");
+  const msg = document.getElementById("msg");
+  if (!form || !msg) return;
+
+  // Remove event listener anterior, caso haja, para evitar duplicidade
+  form.removeEventListener("submit", form._submitHandler);
+
+  const submitHandler = function (event) {
+    event.preventDefault();
+    enviarDadosParaPlanilha();
+  };
+
+  // Guarda a referência para poder remover depois
+  form._submitHandler = submitHandler;
+
+  form.addEventListener("submit", submitHandler);
+
+  // Limpa a mensagem quando qualquer campo for modificado
+  const campos = form.querySelectorAll("input, textarea");
+  campos.forEach(campo => {
+    campo.removeEventListener("input", campo._inputHandler); // evita duplicidade
+
+    const inputHandler = () => {
+      msg.textContent = "";
+    };
+
+    campo._inputHandler = inputHandler;
+    campo.addEventListener("input", inputHandler);
+  });
+}
+
+
+function enviarDadosParaPlanilha() {
+  const dados = capturarDadosDoFormulario();
+  enviarParaGoogleSheets(dados);
+}
+
+function capturarDadosDoFormulario() {
+  return {
+    nome: document.getElementById("nome").value,
+    email: document.getElementById("email").value,
+    telefone: document.getElementById("telefone").value,
+    mensagem: document.getElementById("mensagem").value,
+  };
+}
+
+function enviarParaGoogleSheets(dados) {
+  const form = document.getElementById("ligaForm");
+  const msg = document.getElementById("msg");
+
+  fetch(
+    "https://script.google.com/macros/s/AKfycbzVWRX67LwMYh6RSzJykEyYZanjeMYAYU25Ng3wUplh0YId-oGn7Hy4adXOyK23Fx5xQg/exec",
+    {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dados),
+    }
+  )
+    .then(() => {
+      mostrarMensagem("Formulário enviado com sucesso!", "green");
+      if (form) form.reset();
+    })
+    .catch(() => {
+      mostrarMensagem("Erro ao enviar. Tente novamente.", "red");
+    });
+}
+
+function mostrarMensagem(texto, cor) {
+  const msg = document.getElementById("msg");
+  if (!msg) return;
+
+  msg.textContent = texto;
+  msg.style.color = cor;
 }
 
 loadLastMain();

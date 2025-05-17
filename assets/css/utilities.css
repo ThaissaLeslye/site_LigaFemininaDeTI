@@ -61,9 +61,11 @@
 .card:hover { transform: scale(1.025); }
 
 /* BUTTONS */
-.card-destaques-button {
-  width: 105px;
+.btn {
+  width: fit-content;
   height: 35px;
+
+  padding: 10px 15px;
 
   border-radius: 25px;
   border: 1px solid black;
@@ -72,7 +74,11 @@
   text-align: center;
   text-transform: uppercase;
 
-  background-color: var(--color-theme);
+  background-color: var(--color-accent);
+}
+
+.btn:hover {
+  background-color: var(--color-theme-lighter);
 }
 
 /* ICONS */

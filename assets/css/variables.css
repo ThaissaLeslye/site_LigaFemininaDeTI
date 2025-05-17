@@ -1,7 +1,7 @@
 :root {
 	/* COLORS */
 	--color-background: #FFF8F0;
-	--color-highlight: #fff8f0;
+	--color-highlight: #fffdf7;
 	
 	--color-theme-dark: #201131;
 	--color-theme: #58209a;
@@ -12,7 +12,7 @@
 	--color-dark-purple-overlay: #201131bf;
   
 	--color-medium-grey: #3b3b3b;
-	--color-text: #201e24;
+	--color-text: #2c2a2e;
 
 	/* TYPOGRAPHY */
 	--main-font: "Poppins", sans-serif;
