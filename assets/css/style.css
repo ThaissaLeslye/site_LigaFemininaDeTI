@@ -1,3 +1,4 @@
+@import url(mais.css);
 @import url(integrantes.css);
 @import url(a-liga.css);
 @import url(footer.css);
@@ -13,6 +14,8 @@ body {
 	font-family: var(--main-font);
     background-color: var(--color-background);
     font-size: var(--text-md);
+
+    outline: none;
 }
 
 a:focus {

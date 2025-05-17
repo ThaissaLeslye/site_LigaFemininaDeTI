@@ -5,10 +5,10 @@ async function loadComponent(className, file, callback) {
 	const element = document.querySelector(`.${className}`);
 
 	if (element) {
-		element.innerHTML = content
+		element.innerHTML = content;
 		window.scrollTo(0, 0);
-		
-		if (typeof callback === 'function') {
+
+		if (typeof callback === "function") {
 			callback();
 		}
 	}
@@ -16,7 +16,7 @@ async function loadComponent(className, file, callback) {
 
 // Changes main's content calling loadComponent
 function changeMain(newClass, htmlFile, targetSectionId = null) {
-  	const mainElement = document.getElementById("main");
+	const mainElement = document.getElementById("main");
 	if (!mainElement) return;
 
 	mainElement.className = newClass;
@@ -30,12 +30,18 @@ function changeMain(newClass, htmlFile, targetSectionId = null) {
 		}
 	};
 
-	if (newClass === 'integrantes') {
-		loadComponent(newClass, htmlFile, renderMembersPanel);
+	if (newClass === "integrantes") {
+		callback = renderMembersPanel;
+		localStorage.setItem("currentCallback", "renderMembersPanel");
+	} else if (newClass === "mais") {
+		callback = appendImages;
+		localStorage.setItem("currentCallback", "appendImages");
 	} else {
-		loadComponent(newClass, htmlFile, afterLoadCallback);
+		callback = null;
+		localStorage.setItem("currentCallback", "");
 	}
 
+	loadComponent(newClass, htmlFile, callback);
 
 	localStorage.setItem("currentClass", newClass);
 	localStorage.setItem("currentFile", htmlFile);
@@ -45,34 +51,54 @@ function changeMain(newClass, htmlFile, targetSectionId = null) {
 function loadLastMain() {
 	const savedClass = localStorage.getItem("currentClass") || "a-liga";
 	const savedFile = localStorage.getItem("currentFile") || "a-liga.html";
+	const savedCallbackName = localStorage.getItem("currentCallback");
+
+	let savedCallback = null;
+	if (savedCallbackName === "renderMembersPanel") {
+		savedCallback = renderMembersPanel;
+	} else if (savedCallbackName === "appendImages") {
+		savedCallback = appendImages;
+	}
 
 	const mainElement = document.getElementById("main");
 	if (!mainElement) return;
 
 	mainElement.className = savedClass;
 
-	loadComponent(savedClass, savedFile);
+	loadComponent(savedClass, savedFile, savedCallback);
 }
 
-// Slides
-function changeSlide(className) {
-	document.querySelectorAll(`.${className}`).forEach(element => {
-		element.classList.toggle("active");
-	});
+// Toggle active
+function changeToActive(className, element = null) {
+	if (element) {
+		const isActive = element.classList.contains(className);
+
+		document.querySelectorAll(`.${className}`).forEach((element) => {
+			element.classList.remove(className);
+		});
+
+		if (!isActive) {
+			element.classList.add(className);
+		}
+	} else {
+		document.querySelectorAll(`.${className}`).forEach((element) => {
+			element.classList.toggle("active");
+		});
+	}
 }
 
-// Integrantes panel items injection
+// INTEGRANTES panel items injection
 function renderMembersPanel() {
-	fetch('/assets/data/membros.json')
-		.then(response => response.json())
-		.then(data => {
-			const painel = document.getElementById('painel');
-		
-			data.membros.forEach(integrante => {
-			const item = document.createElement('div');
-			item.classList.add('item');
+	fetch("/assets/data/membros.json")
+		.then((response) => response.json())
+		.then((data) => {
+			const painel = document.getElementById("painel");
 
-			item.innerHTML = `
+			data.membros.forEach((integrante) => {
+				const item = document.createElement("div");
+				item.classList.add("item");
+
+				item.innerHTML = `
 				<div class="imagem-wrapper">
 					<img src="${integrante.foto}" alt="${integrante.nome}">
 					<div class="overlay">
@@ -83,11 +109,33 @@ function renderMembersPanel() {
 				<span>${integrante.cargo}</span>
 			`;
 
-			painel.appendChild(item);
+				painel.appendChild(item);
 			});
 		})
-		.catch(error => console.error('Erro ao carregar os dados:', error));
+		.catch((error) => console.error("Erro ao carregar os dados:", error));
+}
+
+// MAIS gallery images injection
+function appendImages() {
+	fetch("/assets/data/imagens-galeria.json")
+		.then((response) => response.json())
+		.then((imageLinks) => {
+			const gallery = document.getElementById("galeria");
+
+			imageLinks.forEach((src) => {
+				const item = document.createElement("div");
+				item.classList.add("galeria-item");
+
+				item.innerHTML = `
+					<img src="${src}" alt="Imagem da Galeria" onclick="changeToActive('active', this)">
+				`;
+
+				gallery.appendChild(item);
+			});
+		})
+		.catch((error) => {
+			console.error("Erro ao carregar imagens:", error);
+		});
 }
 
 loadLastMain();
-renderMembersPanel();
