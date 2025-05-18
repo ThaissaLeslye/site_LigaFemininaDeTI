@@ -47,6 +47,7 @@
 .a-liga > .valores > .content .card-text {
     height: 400px;
     overflow-y: scroll;
+    overflow: auto;
 }
 
 .a-liga > .valores .card-missao {
