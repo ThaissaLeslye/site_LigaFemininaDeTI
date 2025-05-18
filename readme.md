@@ -89,7 +89,7 @@ O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e
 
 ## 📄 Integração com Google Sheets
 
-- 🔗 [Acessar planilha de teste do formulário](https://docs.google.com/spreadsheets/d/1C1BTThaXPCHVCrFMKl5hIHOYPOpKf8Hseid8Z7qn2PM/edit?gid=0#gid=0)
+- 🔗 <a href="https://docs.google.com/spreadsheets/d/1C1BTThaXPCHVCrFMKl5hIHOYPOpKf8Hseid8Z7qn2PM/edit?gid=0#gid=0" target="_blank">Acessar planilha de teste do formulário</a>
 
 ---
 
