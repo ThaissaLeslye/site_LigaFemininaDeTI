@@ -151,15 +151,17 @@
     background-image: var(--image-campus-mobile);
 }
 
+/* MEDIA */
 @media (max-width: 950px) {
     .a-liga > .sobre > .content {
         width: 100%;
 
         flex-direction: column;
     }   
-}
-
-@media (max-width: 450px) {
+    
+    .a-liga > .valores > .content {
+        width: 100%;
+    }
 
     .a-liga > .sobre > .content > img {
         width: 200px;
@@ -174,8 +176,15 @@
         width: 100%;
     }
 
+    .card-valores .card-text.active {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .a-liga > .valores .card-valores {
         width: 100%;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .a-liga > .destaques > .content > .row {

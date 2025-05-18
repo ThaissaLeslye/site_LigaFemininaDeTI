@@ -104,9 +104,7 @@
 		min-width: 100%;
 
 	}
-}
 
-@media (max-width: 450px) {
 	.galeria-item img.active {
 		width: 300px;
 		height: 300px;

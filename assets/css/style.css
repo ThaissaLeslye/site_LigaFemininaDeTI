@@ -96,9 +96,6 @@ button {
 }
 
 @media (max-width: 450px) {
-    body {
-        font-size: 12px;
-    }
     input::placeholder,
 textarea::placeholder {
 	font-size: var(--text-base);
