@@ -1,8 +1,9 @@
 :root {
 	/* COLORS */
-	--color-background: #f7f5eb;
-	--color-highlight: #fff8f0;
-  
+	--color-background: #FFF8F0;
+	--color-highlight: #fffbf6;
+	
+	--color-theme-dark: #201131;
 	--color-theme: #58209a;
 	--color-theme-light: #9b5de5;
 	--color-theme-lighter: #c396f7;
@@ -11,14 +12,14 @@
 	--color-dark-purple-overlay: #201131bf;
   
 	--color-medium-grey: #3b3b3b;
-	--color-text: #201e24;
+	--color-text: #2c2a2e;
 
 	/* TYPOGRAPHY */
 	--main-font: "Poppins", sans-serif;
 	--text-xxl: 64px; /* Titulo capa */
 	--text-xl: 32px; /* Título principal */
 	--text-lg: 24px; /* Subtítulo */
-	--text-md: 20px; /* Destaque ou lead */
+	--text-md: 20px; /* Texto medio */
 	--text-base: 16px; /* Texto normal */
 
 	/*SIZES*/
@@ -28,5 +29,8 @@
 	--height-header: 80px;
 
 	/*IMAGES*/
-	--image-a-liga: url("/assets/images/cover-a-liga.png");
+	--image-cover-a-liga: url("/assets/images/cover-a-liga.png");
+	--image-cover-integrantes: url("/assets/images/cover-integrantes.png");
+	--image-futuras-cientistas: url("/assets/images/futuras-cientistas.png");
+	--image-campus-mobile: url("/assets/images/campus-mobile.png");
 }

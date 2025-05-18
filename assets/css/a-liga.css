@@ -1,0 +1,137 @@
+/* A LIGA */
+
+/* COVER */
+.a-liga > .cover {
+    background-image: var(--image-cover-a-liga);
+}
+
+.a-liga > .cover .social-media {
+    padding-top: 10px;
+    justify-content: end;
+}
+
+.a-liga > .cover .social-media > ul > li{
+    padding-left: 10px;
+    display: inline;
+}
+
+/* SOBRE */
+.a-liga > .sobre > .content {
+    width: 60vw;
+
+    flex-direction: column;
+}
+
+.a-liga > .sobre > .content > img {
+    padding-bottom: 50px;
+}
+
+.a-liga > .sobre > .content > .text {
+    padding-bottom: var(--height-header);
+}
+
+/* VALORES */
+.a-liga > .valores > .content {
+    width: 70vw;
+}
+
+.a-liga > .valores > .content h1 {
+    padding-bottom: 15px;
+}
+
+.a-liga > .valores .card-visao {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.a-liga > .valores > .content .card-text {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.a-liga > .valores .card-missao {
+    width: 40%;
+    margin-right: 3%;
+}
+
+.a-liga > .valores .card-valores {
+    width: 57%;
+}
+
+/* Card valores ---Card slide */
+.card-valores .next-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.card-valores .next-btn.active {
+    display: block;
+}
+
+.card-valores .card-text {
+    display: none;
+}
+
+.card-valores .card-text.active {
+    display: block;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.card-valores .elipses {
+    width: 50px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+/* Card valores ---Card slide elipses */
+.card-valores .elipse {
+    height: 18px;
+    width: 18px;
+
+    background-color: var(--color-background);
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.card-valores .elipse.active {
+    height: 20px;
+    width: 20px;
+
+    background-color: var(--color-accent);
+}
+
+/* DESTAQUES */
+.a-liga > .destaques > .content {
+    color: var(--color-background);
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.a-liga > .destaques > .content p {
+    -webkit-text-stroke: 1px black;
+    padding-bottom: 20px;
+}
+
+.a-liga > .destaques .card-destaques {
+    height: 714px;
+    width: 48%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    justify-content: space-between;
+}
+
+.a-liga > .destaques .card-destaques .main-title {
+    font-size: var(--text-lg);
+}
+
+.a-liga > .destaques .card-destaques:first-child {
+    margin-right: 4%;
+
+    background-image: var(--image-futuras-cientistas);
+}
+
+.a-liga > .destaques .card-destaques:last-child {
+    background-image: var(--image-campus-mobile);
+}

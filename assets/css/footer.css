@@ -7,14 +7,34 @@ footer {
 
     flex-direction: column;
     
-    background-color: var(--color-background);
+    background-color: var(--color-theme-dark);
+    color: var(--color-background);
+
+    box-shadow: 0 -3px 5px -2px var(--color-dark-purple-overlay)
 }
 
 /* Main content*/
 .footer-content {
     height: 90%;
-    flex-direction: row;
-    justify-content: space-between !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-content .logo {
+    width: 100px;
+}
+
+.footer-content .title {
+    font-size: var(--text-md);
+    font-weight: 300;
+}
+
+.footer-menu {
+    font-size: var(--text-base);
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Copyrights */

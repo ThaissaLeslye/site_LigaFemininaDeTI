@@ -1,0 +1,71 @@
+<main class="mais">
+	<section id="mais-galeria" class="mais-galeria">
+        <h1 class="main-title lavander">Galeria</h1>
+		<div id="galeria" class="galeria"></div>
+	</section>
+
+	<section id="mais-processo-seletivo" class="mais-processo-seletivo">
+		<div class="content flex-center column">
+			<h1 class="main-title lavander">
+				Processo Seletivo
+			</h1>
+
+			<img
+				src="/assets/images/processo-seletivo.png"
+				alt="Mulher desenhada em um escudo."
+			/>
+			<div class="text text-justify">
+				<p>
+					Requisitos para participação:
+					<ol>
+						<br>
+						<li>
+							Nossa iniciativa é exclusivamente voltada para mulheres (cisgênero ou trans);
+						</li>
+						<br>
+						<li>
+							É necessário estar matriculada em cursos de graduação como Ciência da Computação, Sistemas da Informação, Engenharia da Computação ou áreas correlatas em qualquer universidade e/ou atuar profissionalmente na área de TI;
+						</li>
+						<br>
+						<li>
+							Ter disponibilidade para dedicar 4 horas semanais e participar de reuniões regulares presenciais e online, workshops e eventos organizados pela liga.
+						</li>
+					</ol>
+				</p>
+			</div>
+			<a href="">
+				<button class="btn">Tire suas dúvidas!</button>
+			</a>
+		</div>
+	</section>
+
+	<section id="mais-fique-por-dentro" class="mais-fique-por-dentro">
+		<div class="content flex-center column">
+			<h1 class="main-title lavander">
+				Fique por dentro
+			</h1>
+
+			<div class="flex-center column text-center">
+				<p>Receba e-mails periódicos com informações sobre a liga!</p>
+				<form id="ligaForm">
+					<label for="nome">Nome</label>
+					<input placeholder="Nome*" type="text" id="nome" name="nome" required />
+					
+					<label for="email">Email</label>
+					<input placeholder="E-mail*" type="email" id="email" name="email" required />
+
+					<label for="telefone">Telefone</label>
+					<input placeholder="Telefone*" type="tel" id="telefone" name="telefone" />
+
+					<label for="mensagem">Mensagem</label>
+					<textarea placeholder="Escreva uma sugestão..." id="mensagem" name="mensagem" rows="4"></textarea>
+					<span style="display: block; font-size: 15px; padding-bottom: 10px;">* itens obrigatórios!</span>
+
+					<button class="btn" type="submit">Enviar</button>
+				</form>
+				<div class="msg" id="msg"></div>
+			</div>
+		</div>
+	</section>
+</main> 
+

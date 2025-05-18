@@ -1,0 +1,92 @@
+/* INTEGRANTES */
+
+/* COVER */
+.integrantes > .cover {
+	background-image: var(--image-cover-integrantes);
+}
+
+.integrantes > .cover img {
+	position: absolute;
+	cursor: pointer;
+	bottom: 0;
+	padding-bottom: 25px;
+}
+
+.integrantes > .cover img:hover {
+	transform: scale(1.5);
+}
+
+/* INTEGRANTES */
+.integrantes .painel h1 {
+	padding-bottom: 0px;
+}
+
+.integrantes .painel-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+	padding-top: 30px;
+}
+
+.integrantes .painel-container .item {
+	width: 250px;
+	text-align: center;
+}
+
+.integrantes .painel-container .item h3 {
+	font-weight: normal;
+	font-size: var(--text-base);
+}
+
+.integrantes .painel-container .item span {
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+	color: var(--color-theme);
+}
+
+.integrantes .painel-container .imagem-wrapper {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transform: scale(1.05);
+}
+
+.integrantes .painel-container .item img {
+	display: block;
+	height: 150px;
+	width: 150px;
+
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.painel-container .item .overlay {
+	position: absolute;
+	width: fit-content;
+	height: 180px;
+	width: 180px;
+
+	background-color: var(--color-dark-purple-overlay);
+	color: var(--color-background);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.imagem-wrapper:hover .overlay {
+	opacity: 1;
+}

@@ -13,17 +13,30 @@
 
 		<link rel="stylesheet" href="/assets/css/style.css" />
 
+		<link
+			rel="icon"
+			type="image/png"
+			href="/assets/images/logo-liga-escudo.png"
+		/>
+
 		<title>Liga Feminina de TI</title>
 	</head>
 	<body>
 		<header class="flex-center">
 			<!-- Logo e Titulo -->
 			<div class="header-title flex-center">
-				<img
-					src="/assets/images/logo-liga-escudo.png"
-					alt="mulher desenhada em um escudo"
-					class="logo"
-				/>
+				<a
+					href="#"
+					class="js-change-main"
+					data-section="a-liga"
+					data-file="a-liga.html"
+				>
+					<img
+						src="/assets/images/logo-liga-escudo.png"
+						alt="mulher desenhada em um escudo"
+						class="logo"
+					/>
+				</a>
 				<h1 class="title">LIGA FEMININA DE TI</h1>
 			</div>
 
@@ -31,79 +44,122 @@
 			<nav class="header-menu">
 				<ul>
 					<li class="item-dropdown">
-						<a href="index.html">A Liga</a>
+						<a
+							href="#"
+							class="js-change-main"
+							data-section="a-liga"
+							data-file="a-liga.html"
+							>A Liga
+							<img src="/assets/images/arrow-down-header.png"></a
+						>
 						<ul class="dropdown">
 							<li class="dropdown-item">
-								<a href="#sobre">Sobre</a>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="a-liga"
+									data-file="a-liga.html"
+									data-target="a-liga-sobre"
+									>Sobre</a
+								>
 							</li>
 							<li class="dropdown-item">
-								<a href="#valores">Valores</a>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="a-liga"
+									data-file="a-liga.html"
+									data-target="a-liga-valores"
+									>Valores</a
+								>
 							</li>
 							<li class="dropdown-item">
-								<a href="#destaques">Destaques</a>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="a-liga"
+									data-file="a-liga.html"
+									data-target="a-liga-destaques"
+									>Destaques</a
+								>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="integrantes.html">Integrantes</a>
+						<a
+							href="#"
+							class="js-change-main"
+							data-section="integrantes"
+							data-file="integrantes.html"
+							>Integrantes</a
+						>
 					</li>
-					<li>
-						<a href="processo-seletivo.html">Processo Seletivo</a>
-					</li>
-					<li>
-						<a href="galeria.html">Galeria</a>
-					</li>
-					<li>
-						<a href="fique-por-dentro.html">Fique por Dentro!</a>
+					<li class="item-dropdown">
+						<a
+							href="#"
+							class="js-change-main"
+							data-section="mais"
+							data-file="mais.html"
+							>Mais
+							<img src="/assets/images/arrow-down-header.png"></a
+						>
+						<ul class="dropdown">
+							<li>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="mais"
+									data-file="mais.html"
+									data-target="mais-galeria"
+									>Galeria</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="mais"
+									data-file="mais.html"
+									data-target="mais-processo-seletivo"
+									>Processo Seletivo</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="js-change-main"
+									data-section="mais"
+									data-file="mais.html"
+									data-target="mais-fique-por-dentro"
+									>Fique por Dentro!</a
+								>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Main -->
-		<div id="a-liga"></div>
+		<div id="main" class="main"></div>
 
 		<footer class="flex">
-			<div class="footer-content flex-center">
-				<div class="header-title">
+			<div class="footer-content">
+				<div class="footer-title flex-center column">
 					<img
-						src="/assets/images/logo-liga-escudo.png"
+						src="/assets/images/logo-liga.png"
 						alt="mulher desenhada em um escudo"
 						class="logo"
 					/>
 					<h1 class="title">LIGA FEMININA DE TI</h1>
 				</div>
 
-				<nav class="footer-menu">
-					<ul>
-						<li>
-							<a href="index.html">A Liga</a>
-						</li>
-						<li>
-							<a href="integrantes.html">Integrantes</a>
-						</li>
-						<li>
-							<a href="processo-seletivo.html"
-								>Processo Seletivo</a
-							>
-						</li>
-						<li>
-							<a href="galeria.html">Galeria</a>
-						</li>
-						<li>
-							<a href="fique-por-dentro.html"
-								>Fique por Dentro!</a
-							>
-						</li>
-					</ul>
-				</nav>
+				<span class="footer-rights"
+					>Copywrite & Copy : 2025 | All Right Reserved by Liga
+					Feminina da UVV</span
+				>
 			</div>
-
-			<span class="footer-rights"
-				>Copywrite & Copy : 2025 | All Right Reserved by Liga Feminina
-				da UVV</span
-			>
 		</footer>
 	</body>
-	<script src="/assets/js/main.js"></script>
+	<script type="module" src="/assets/js/main.js"></script>
 </html>

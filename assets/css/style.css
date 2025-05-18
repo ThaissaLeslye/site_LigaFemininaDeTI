@@ -1,3 +1,6 @@
+@import url(mais.css);
+@import url(integrantes.css);
+@import url(a-liga.css);
 @import url(footer.css);
 @import url(header.css);
 @import url(variables.css);
@@ -9,51 +12,74 @@
 /* Defines site's font */
 body {
 	font-family: var(--main-font);
+    background-color: var(--color-background);
+    font-size: var(--text-md);
+
+    font-weight: 300;
+    color: var(--color-text);
+}
+
+input::placeholder, textarea::placeholder {
+	font-family: var(--main-font);
+    font-size: var(--text-md);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
 }
 
 /* Defines the site's breathing space*/
 header,
 main > section,
 footer {
-	padding: 0 15vw;
+	padding-right: 15vw;
+    padding-left: 15vw;
 }
 
 /* Prevents the header from covering the main */
-main {
-	padding-top: var(--height-header);
+section {
+    min-height: fit-content;
+    max-height: 100vh;
+    box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    scroll-margin-top: var(--height-header);
+	
+}
+
+button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
 }
 
 /* ---SECTION COVER--- */
 .cover {
-    width: 100vw;
-    height: 930px;
+    height: calc(100vh - 80px);
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
 
-    background-image: linear-gradient(
-        var(--color-dark-purple-overlay), 
-        var(--color-dark-purple-overlay)),
-        var(--image-a-liga);
     background-size: cover;
     background-repeat: no-repeat;
-
-    color: var(--color-background);
 }
 
 .container-title {
     width: fit-content;
-    height: 55%;
+    height: fit-content;
     margin: 0 auto;
+    position: relative;
 
     flex-direction: column;
     justify-content: end;
+
+    color: var(--color-background);
 }
 
-.social-media {
-    padding-top: 10px;
-    justify-content: end;
-}
-
-.a-liga .social-media > ul > li{
-    padding-left: 10px;
-    display: inline;
-}
 

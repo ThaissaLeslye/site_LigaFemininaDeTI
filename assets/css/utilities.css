@@ -1,14 +1,19 @@
 /* ALIGMENTS */
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-justify {text-align: justify;}
 
 .flex { display: flex; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
+.row { display: flex; flex-direction: row;}
+.column { display: flex; flex-direction: column;}
 
 /* TITLES */
 .cover-title {font-size: var(--text-xxl); font-weight: 900;}
 
-.section-title {
+.main-title {
+  padding-bottom: 50px;
+
   font-size: var(--text-xl);
   font-weight: 900;
   text-transform: uppercase;
@@ -31,7 +36,56 @@
 */
 
 /* COLORS */
-.lavander { color: var(--color-theme-lighter);}
+.lavander { color: var(--color-theme-lighter) !important;}
+.bg-lavander { background-color: var(--color-theme-lighter) !important;}
 
-.bright { color: var(--color-accent);}
+.bright { color: var(--color-accent) !important;}
+.bg-bright { background-color: var(--color-accent) !important; }
 
+/* CARDS */
+.card {
+  background-color: var(--color-highlight);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px var(--color-dark-purple-overlay);
+  padding: 25px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: justify;
+}
+
+.card:hover { transform: scale(1.025); }
+
+/* BUTTONS */
+.btn {
+  width: fit-content;
+  height: 35px;
+
+  padding: 10px 15px;
+
+  border-radius: 25px;
+  border: 1px solid black;
+
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--color-accent);
+}
+
+.btn:hover {
+  background-color: var(--color-theme-lighter);
+}
+
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
