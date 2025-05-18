@@ -115,9 +115,8 @@ Os arquivos foram organizados para manter clareza e padronização:
 
 ### 🔗 Publicação via GitHub Pages
 
-```md
-[Site Liga Feminina de TI - 1° Hackaton](https://thaissaleslye.github.io/site_LigaFemininaDeTI/)
-```
+- [Site Liga Feminina de TI - 1° Hackaton](https://thaissaleslye.github.io/site_LigaFemininaDeTI/)
+
 
 ### 💻 Desenvolvimento Local
 
