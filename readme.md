@@ -147,3 +147,4 @@ Abra `http://localhost:8080` (ou a porta indicada pelo servidor).
 
 ---
 
+Autoria: Thaissa Lourenço
