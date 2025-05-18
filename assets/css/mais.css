@@ -62,6 +62,10 @@
 	max-height: 100vh - 200px;
 }
 
+.mais-fique-por-dentro .main-title {
+	padding-bottom: 20px;
+}
+
 .mais-fique-por-dentro img {
 	width: 200px;
 }
