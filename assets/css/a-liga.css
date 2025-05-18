@@ -33,13 +33,20 @@
 /* VALORES */
 .a-liga > .valores > .content {
     width: 70vw;
+}
 
-    padding-bottom: var(--height-header);
+.a-liga > .valores > .content h1 {
+    padding-bottom: 15px;
 }
 
 .a-liga > .valores .card-visao {
     width: 100%;
     margin-bottom: 25px;
+}
+
+.a-liga > .valores > .content .card-text {
+    height: 400px;
+    overflow-y: scroll;
 }
 
 .a-liga > .valores .card-missao {

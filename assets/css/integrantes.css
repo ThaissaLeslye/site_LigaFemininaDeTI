@@ -5,7 +5,22 @@
 	background-image: var(--image-cover-integrantes);
 }
 
+.integrantes > .cover img {
+	position: absolute;
+	cursor: pointer;
+	bottom: 0;
+	padding-bottom: 25px;
+}
+
+.integrantes > .cover img:hover {
+	transform: scale(1.5);
+}
+
 /* INTEGRANTES */
+.integrantes .painel h1 {
+	padding-bottom: 0px;
+}
+
 .integrantes .painel-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -47,8 +62,8 @@
 
 .integrantes .painel-container .item img {
 	display: block;
-	height: 180px;
-	width: 180px;
+	height: 150px;
+	width: 150px;
 
 	object-fit: cover;
 	border-radius: 100%;
@@ -70,10 +85,6 @@
 	border-radius: 100%;
 	opacity: 0;
 	transition: opacity 0.3s ease;
-}
-
-.painel-container .item .overlay a {
-	text-decoration: underline;
 }
 
 .imagem-wrapper:hover .overlay {

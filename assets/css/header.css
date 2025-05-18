@@ -4,7 +4,7 @@
 header {
     width: 100vw;
     height: var(--height-header);
-
+    top: 0;
     justify-content: space-between !important;
     position: fixed;
     z-index: 10;
@@ -30,6 +30,13 @@ header {
     width: 25vw;
     font-size: var(--text-base);
     font-weight: 300;
+}
+
+.header-menu img {
+    height: 30px;
+    position: absolute;
+    padding-left: 3px;
+    padding-bottom: 8px;
 }
 
 .header-menu > ul {

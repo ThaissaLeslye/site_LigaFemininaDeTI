@@ -43,11 +43,10 @@ footer {
 /* Prevents the header from covering the main */
 section {
     min-height: fit-content;
-    height: 100vh;
-
+    max-height: 100vh;
     box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
-    padding-top: var(--height-header);
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     scroll-margin-top: var(--height-header);
 	
@@ -61,13 +60,19 @@ button {
 
 /* ---SECTION COVER--- */
 .cover {
+    height: calc(100vh - 80px);
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .container-title {
     width: fit-content;
-    height: 55%;
+    height: fit-content;
     margin: 0 auto;
     position: relative;
 
