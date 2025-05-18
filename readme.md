@@ -116,7 +116,7 @@ Os arquivos foram organizados para manter clareza e padronização:
 ### 🔗 Publicação via GitHub Pages
 
 ```md
-https://<seu-usuario>.github.io/<nome-do-repositorio>/
+https://thaissaleslye.github.io/site_LigaFemininaDeTI/
 ```
 
 ### 💻 Desenvolvimento Local
@@ -124,7 +124,7 @@ https://<seu-usuario>.github.io/<nome-do-repositorio>/
 1. **Clone o repositório:**
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/ThaissaLeslye/site_LigaFemininaDeTI.git
 ```
 
 2. **Abra o projeto em um servidor local:**
