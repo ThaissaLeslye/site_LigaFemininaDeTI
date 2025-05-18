@@ -6,10 +6,8 @@
 }
 
 .integrantes > .cover img {
-	position: absolute;
 	cursor: pointer;
-	bottom: 0;
-	padding-bottom: 25px;
+	padding-top: 50px;
 }
 
 .integrantes > .cover img:hover {
@@ -90,3 +88,8 @@
 .imagem-wrapper:hover .overlay {
 	opacity: 1;
 }
+
+/* MEDIA */
+@media (max-width: 450px) {
+}
+
