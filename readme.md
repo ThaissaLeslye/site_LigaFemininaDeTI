@@ -6,6 +6,8 @@ A **Liga Feminina de TI** é um projeto da Universidade de Vila Velha que visa p
 
 ## 📌 Visão Geral
 
+![image](https://github.com/user-attachments/assets/fbff70a0-61ae-49b2-850a-e686a2573633)
+
 O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e *Mais*), que são carregadas dinamicamente via `fetch` com o auxílio de módulos JavaScript. A interface do site oferece:
 
 - 🚀 **Navegação dinâmica:** O conteúdo é carregado conforme o usuário interage com o menu.
