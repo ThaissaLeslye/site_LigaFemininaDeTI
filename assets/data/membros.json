@@ -15,43 +15,43 @@
 		{
 			"nome": "Lara Mendes Valin",
 			"foto": "./assets/images/lara-mendes.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/lara-mendes-valin-492435151",
             "cargo": "Membro"
 		},
 		{
 			"nome": "Luana Teixeira da Silva",
 			"foto": "./assets/images/luana-teixeira.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/luanatxds/",
             "cargo": "Membro"
 		},
 		{
 			"nome": "Marcela R dos Santos",
 			"foto": "./assets/images/marcela-santos.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/marcela-r-santos/",
             "cargo": "Membro"
 		},
 		{
 			"nome": "Maria Eduarda Fiorio",
 			"foto": "./assets/images/maria-fiorio.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/maria-fiorio-84764217b/",
             "cargo": "Membro"
 		},
 		{
 			"nome": "Nikelly S J Thomaz",
 			"foto": "./assets/images/nikelly-thomaz.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/nikelly-s-j-thomaz-935b2024a/",
             "cargo": "Membro"
 		},
 		{
 			"nome": "Suellen Miranda Amorim",
 			"foto": "./assets/images/suellen-miranda.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/suellenmiranda/",
             "cargo": "Membro"
 		},
         {
             "nome": "Susi Lima",
             "foto": "./assets/images/susi-lima.jpg",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/susil%C3%A9a-abreu/",
             "cargo": "Membro"
         }
 	]
