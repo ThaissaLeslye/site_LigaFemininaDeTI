@@ -45,7 +45,6 @@
 }
 
 .a-liga > .valores > .content .card-text {
-    height: 400px;
     overflow-y: scroll;
     overflow: auto;
 }
@@ -53,10 +52,18 @@
 .a-liga > .valores .card-missao {
     width: 40%;
     margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .a-liga > .valores .card-valores {
     width: 57%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Card valores ---Card slide */
@@ -123,6 +130,13 @@
     justify-content: space-between;
 }
 
+.a-liga > .destaques .card-destaques p {
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
 .a-liga > .destaques .card-destaques .main-title {
     font-size: var(--text-lg);
 }
@@ -135,4 +149,41 @@
 
 .a-liga > .destaques .card-destaques:last-child {
     background-image: var(--image-campus-mobile);
+}
+
+@media (max-width: 950px) {
+    .a-liga > .sobre > .content {
+        width: 100%;
+
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 450px) {
+
+    .a-liga > .sobre > .content > img {
+        width: 200px;
+    }
+
+    .a-liga > .valores > .content > .row{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .a-liga > .valores .card-missao {
+        width: 100%;
+    }
+
+    .a-liga > .valores .card-valores {
+        width: 100%;
+    }
+
+    .a-liga > .destaques > .content > .row {
+        flex-direction: column;
+        gap: 50px
+    }
+
+    .a-liga > .destaques .card-destaques {
+        width: 100%;
+    }
 }

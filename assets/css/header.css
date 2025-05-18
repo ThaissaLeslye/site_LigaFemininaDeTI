@@ -20,7 +20,7 @@ header {
     width: 50px;
 }
 
-.header-title > .title {
+.header-title .title {
     font-weight: 300;
     font-size: 20px;
 }
@@ -51,6 +51,7 @@ header {
     min-width: 100px;
     text-align: center;
 }
+
 /* Menu > Dropdown */
 .header-menu .dropdown {
     display: none;
@@ -71,4 +72,36 @@ header {
 
 .item-dropdown:hover .dropdown {
     display: block;
+}
+
+/* MEDIA */
+@media (max-width: 950px){
+    .header-title .title {
+        display: none;
+    }
+
+    .header-menu {
+        width: 70vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header-menu {
+        font-size: 12px;
+    }
+
+    .header-menu img {
+        padding-bottom: 15px;
+    }
+
+    .header-menu .dropdown {
+        width: 100px;
+    }
+
+    .header-menu > ul > li {
+    width: 100px;
+    }
 }

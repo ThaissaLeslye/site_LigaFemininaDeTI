@@ -71,10 +71,9 @@
 }
 
 .mais-fique-por-dentro .content form {
-  width: 35vw;
-  min-width: 400px;
+  width: 750px;
   margin-top: 10px;
-  padding: 20px 60px 40px 60px;
+  padding: 40px 60px 60px 60px;
   background: var(--color-highlight);
   border-radius: 20px;
   box-shadow: 0 0 5px var(--color-dark-purple-overlay);
@@ -98,4 +97,25 @@
 	color: var(--color-text);
 }
 
+/* MEDIA */
+@media (max-width: 950px) {
+	.mais-fique-por-dentro .content form {
+		width: 100%;
+		min-width: 100%;
+
+	}
+}
+
+@media (max-width: 450px) {
+	.galeria-item img.active {
+		width: 300px;
+		height: 300px;
+	}
+
+	.mais-processo-seletivo .text {
+		width: 100%;
+
+	}
+
+}
 
