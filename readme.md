@@ -1,17 +1,23 @@
-# Liga Feminina de TI
+# 🌸 Liga Feminina de TI
 
-A **Liga Feminina de TI** é um projeto da Universidade de Vila Velha que visa promover diversidade, inclusão e inovação no setor de tecnologia. O site foi desenvolvido como uma aplicação web dinâmica utilizando HTML, CSS e JavaScript, e tem como objetivo destacar a trajetória e os valores do movimento, além de apresentar suas integrantes e iniciativas.
+A **Liga Feminina de TI** é um projeto da Universidade de Vila Velha que visa promover diversidade, inclusão e inovação no setor de tecnologia. Este site foi desenvolvido para o **1º Hackaton da Liga**.
 
-## Visão Geral
+---
 
-O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e *Mais*) que são carregadas dinamicamente via `fetch` com o auxílio de módulos JavaScript. A interface moderna do site oferece:
+## 📌 Visão Geral
 
-- **Navegação dinâmica:** O conteúdo é carregado conforme o usuário interage com o menu.
-- **Galeria de imagens:** Exibição de fotos provenientes de um arquivo JSON.
-- **Formulário interativo:** Permite que as usuárias entrem em contato, enviando dados para uma planilha do Google Sheets.
-- **Exibição dos membros:** Dados dos integrantes são carregados dinamicamente a partir de um JSON.
+O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e *Mais*), que são carregadas dinamicamente via `fetch` com o auxílio de módulos JavaScript. A interface do site oferece:
 
-## Estrutura do Projeto
+- 🚀 **Navegação dinâmica:** O conteúdo é carregado conforme o usuário interage com o menu.
+- 🖼️ **Galeria de imagens:** Fotos exibidas a partir de um arquivo JSON.
+- 📬 **Formulário interativo:** Permite que as usuárias entrem em contato, enviando dados para o Google Sheets.
+- 👩‍💻 **Exibição dos membros:** Os dados dos integrantes são carregados dinamicamente via JSON.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
 |-- a-liga.html
 |-- index.html
 |-- integrantes.html
@@ -34,8 +40,8 @@ O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e
     |   |-- membros.json
     |
     |-- images
-    |   |-- (imagens diversas, como ícones, logos e covers)
-    |   |-- galeria
+    |   |-- (ícones, logos, covers etc.)
+    |   \-- galeria
     |       |-- 1.jpg
     |       |-- 2.jpg
     |       |-- 3.jpg
@@ -43,7 +49,7 @@ O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e
     |       |-- 5.jpg
     |       |-- 6.jpg
     |
-    |-- js
+    \-- js
         |-- main.js
         |
         \-- modules
@@ -54,67 +60,91 @@ O projeto é composto por diversas páginas HTML (como *A Liga*, *Integrantes* e
             |-- members.js
             |-- navigation.js
             |-- toggle.js
+```
 
+---
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **HTML5 & CSS3:** Estrutura e estilização divididas em arquivos específicos (*variables.css*, *utilities.css*, *reset.css*, etc.).
-- **JavaScript (ES6 Modules):** Código modularizado para carregamento dinâmico de conteúdos, manipulação de formulários e interações.
-- **Fetch API:** Carregamento dos componentes HTML e dos dados para galeria/membros.
-- **LocalStorage:** Mantém o estado atual da seção exibida, proporcionando uma navegação persistente.
-- **Integração com Google Sheets:** Envio dos dados do formulário para uma planilha via Google Apps Script.
+- **HTML5 & CSS3:** Estrutura e estilos separados por arquivos temáticos.
+- **JavaScript (ES6 Modules):** Código modularizado para manipulações dinâmicas.
+- **Fetch API:** Utilizada para carregar conteúdo e dados JSON.
+- **LocalStorage:** Permite persistência de navegação.
+- **Google Apps Script:** Integração com planilhas Google para envio do formulário.
 
-## Módulos JavaScript
+---
 
-- **main.js:** Inicializa os _event listeners_ e restaura o último conteúdo exibido no `<main>` ao carregar o site.
-- **componentLoader.js:** Responsável por carregar, via `fetch`, os conteúdos HTML de cada página.
-- **eventHandlers.js:** Configura os eventos de clique para os links de navegação.
-- **forms.js:** Gerencia o formulário de contato, incluindo validação, captura de dados e envio para o Google Sheets.
-- **gallery.js:** Carrega e exibe as imagens da galeria a partir do arquivo `imagens-galeria.json`.
-- **members.js:** Renderiza o painel de integrantes com os dados do arquivo `membros.json`.
-- **navigation.js:** Controla a troca de seções e integra callbacks específicos para cada página.
-- **toggle.js:** Implementa funções para alternar classes CSS, destacando elementos conforme necessário.
+## 📦 Módulos JavaScript
 
-## Estilização com CSS
+- **`main.js`**: Inicializa eventos e restaura o conteúdo da última seção acessada.
+- **`componentLoader.js`**: Carrega conteúdos HTML dinamicamente via `fetch`.
+- **`eventHandlers.js`**: Garante a navegação funcional por meio de eventos.
+- **`forms.js`**: Validação e envio de dados do formulário para o Google Sheets.
+- **`gallery.js`**: Exibe imagens da galeria usando `imagens-galeria.json`.
+- **`members.js`**: Renderiza os dados dos membros a partir de `membros.json`.
+- **`navigation.js`**: Controla a troca de páginas.
+- **`toggle.js`**: Alterna estilos dinâmicos em elementos da interface.
 
-Os arquivos de estilo foram organizados para facilitar a manutenção e a consistência visual:
+---
 
-- **variables.css:** Define variáveis para cores, tipografia, dimensões e imagens de fundo.
-- **utilities.css:** Classes utilitárias para alinhamento, exibição flexível e formatação de texto.
-- **reset.css:** Remove margens, paddings e outros estilos padrões para garantir consistência entre navegadores.
-- **Estilos Específicos:** Arquivos como *a-liga.css*, *header.css* e *footer.css* cuidam da estilização de seções específicas do site.
+## 📄 Integração com Google Sheets
 
-## Arquivos de Dados
+- 🔗 [Acessar planilha de teste do formulário](https://docs.google.com/spreadsheets/d/1C1BTThaXPCHVCrFMKl5hIHOYPOpKf8Hseid8Z7qn2PM/edit?gid=0#gid=0)
 
-- **imagens-galeria.json:** Contém a lista de URLs das imagens para a galeria.
-- **membros.json:** Armazena os dados dos membros, incluindo nome, foto, cargo e perfil do LinkedIn.
+---
 
-## Instalação e Uso
+## 🎨 Estilização com CSS
 
-### Publicação via GitHub Pages
+Os arquivos foram organizados para manter clareza e padronização:
 
-Este projeto é destinado a ser publicado no GitHub Pages, permitindo que você acesse o site diretamente pela URL fornecida pelo GitHub. Basta configurar as *settings* do repositório para habilitar o GitHub Pages (geralmente apontando para o branch `main` ou `gh-pages`).
+- **`variables.css`**: Cores, tipografia, dimensões e fundos.
+- **`utilities.css`**: Classes utilitárias para layout e texto.
+- **`reset.css`**: Reset básico para evitar inconsistências entre navegadores.
+- **Estilos específicos**: Arquivos como `header.css`, `a-liga.css` e `footer.css` cuidam de seções individuais.
 
-Após a publicação, o site estará acessível no seguinte formato:
+---
+
+## 📂 Arquivos de Dados
+
+- **`imagens-galeria.json`**: Lista de imagens da galeria.
+- **`membros.json`**: Dados dos membros (nome, cargo, foto, LinkedIn).
+
+---
+
+## 🚀 Instalação e Uso
+
+### 🔗 Publicação via GitHub Pages
+
+```md
 https://<seu-usuario>.github.io/<nome-do-repositorio>/
+```
 
-### Desenvolvimento Local
-
-Caso deseje realizar testes ou desenvolver localmente, siga os seguintes passos:
+### 💻 Desenvolvimento Local
 
 1. **Clone o repositório:**
+
 ```bash
 git clone <URL_DO_REPOSITORIO>
+```
 
-2. Abra o projeto em um servidor local: Como o projeto utiliza fetch para carregar arquivos HTML e JSON, recomenda-se o uso de um servidor local. Algumas opções incluem:
+2. **Abra o projeto em um servidor local:**
 
-Live Server
+Como o site utiliza `fetch` para carregar arquivos locais, recomenda-se o uso de um servidor local.
 
-http-server
+**Opções recomendadas:**
 
-Para utilizar o http-server, execute:
+- **Live Server** (extensão para VS Code)
+- **http-server** (via Node.js)
 
-bash
+Para usar o `http-server`, rode:
+
+```bash
 npx http-server
+```
 
-3. Acesse o site: Abra o seu navegador e acesse http://localhost:8080 (ou a porta indicada pelo servidor).
+3. **Acesse no navegador:**
+
+Abra `http://localhost:8080` (ou a porta indicada pelo servidor).
+
+---
+
