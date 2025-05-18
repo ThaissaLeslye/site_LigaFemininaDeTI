@@ -29,8 +29,8 @@
 	--height-header: 80px;
 
 	/*IMAGES*/
-	--image-cover-a-liga: url("./assets/images/cover-a-liga.png");
-	--image-cover-integrantes: url("./assets/images/cover-integrantes.png");
-	--image-futuras-cientistas: url("./assets/images/futuras-cientistas.png");
-	--image-campus-mobile: url("./assets/images/campus-mobile.png");
+	--image-cover-a-liga: url("./images/cover-a-liga.png");
+	--image-cover-integrantes: url("./images/cover-integrantes.png");
+	--image-futuras-cientistas: url("./images/futuras-cientistas.png");
+	--image-campus-mobile: url("./images/campus-mobile.png");
 }
