@@ -7,50 +7,28 @@
 @import url(reset.css);
 @import url(utilities.css);
 
-/* ---GENERAL--- */
-
-/* Defines site's font */
+/* GLOBAL */
 body {
-	font-family: var(--main-font);
-    background-color: var(--color-background);
-    font-size: var(--text-md);
-
-    font-weight: 300;
-    color: var(--color-text);
+  font-family: var(--main-font);
+  background-color: var(--color-background);
+  font-size: var(--text-md);
+  font-weight: 300;
+  color: var(--color-text);
 }
 
-input::placeholder, textarea::placeholder {
-	font-family: var(--main-font);
-    font-size: var(--text-md);
+input::placeholder, 
+textarea::placeholder {
+  font-family: var(--main-font);
+  font-size: var(--text-md);
 }
 
-input:focus, textarea:focus {
-    outline: none;
+input:focus, 
+textarea:focus {
+  outline: none;
 }
 
 a:focus {
-    outline: none;
-}
-
-/* Defines the site's breathing space*/
-header,
-main > section,
-footer {
-	padding-right: 15vw;
-    padding-left: 15vw;
-}
-
-/* Prevents the header from covering the main */
-section {
-    min-height: fit-content;
-    height: 100vh;
-
-    box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
-    padding-top: var(--height-header);
-    padding-bottom: 80px;
-
-    scroll-margin-top: var(--height-header);
-	
+  outline: none;
 }
 
 button {
@@ -59,22 +37,36 @@ button {
     cursor: pointer;
 }
 
-/* ---SECTION COVER--- */
-.cover {
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Container principal do site */
+.site {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-family: var(--main-font);
 }
 
-.container-title {
-    width: fit-content;
-    height: 55%;
-    margin: 0 auto;
-    position: relative;
-
-    flex-direction: column;
-    justify-content: end;
-
-    color: var(--color-background);
+.site__section {
+  min-height: fit-content;
+  height: 100vh;
+  box-shadow: 0 5px 5px -5px var(--color-dark-purple-overlay);
+  padding-top: var(--height-header);
+  padding-bottom: 80px;
+  scroll-margin-top: var(--height-header);
 }
 
+
+/* COVER */
+.site__cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site__cover-title-container {
+  width: fit-content;
+  height: 55%;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: end;
+  color: var(--color-background);
+}
 

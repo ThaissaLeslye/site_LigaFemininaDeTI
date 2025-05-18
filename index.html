@@ -15,77 +15,144 @@
 
 		<title>Liga Feminina de TI</title>
 	</head>
+
 	<body>
-		<header class="flex-center">
-			<!-- Logo e Titulo -->
-			<div class="header-title flex-center">
-				<a onclick="changeMain('a-liga', 'a-liga.html')">
-					<img
-						src="/assets/images/logo-liga-escudo.png"
-						alt="mulher desenhada em um escudo"
-						class="logo"
-					/>
-				</a>
-				<h1 class="title">LIGA FEMININA DE TI</h1>
-			</div>
-
-			<!-- Menu -->
-			<nav class="header-menu">
-				<ul>
-					<li class="item-dropdown">
-						<a onclick="changeMain('a-liga', 'a-liga.html')">A Liga</a>
-						<ul class="dropdown">
-							<li class="dropdown-item">
-								<a onclick="changeMain('a-liga', 'a-liga.html', 'a-liga-sobre')">Sobre</a>
-							</li>
-							<li class="dropdown-item">
-								<a onclick="changeMain('a-liga', 'a-liga.html', 'a-liga-valores')">Valores</a>
-							</li>
-							<li class="dropdown-item">
-								<a onclick="changeMain('a-liga', 'a-liga.html', 'a-liga-destaques')">Destaques</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a onclick="changeMain('integrantes', 'integrantes.html')">Integrantes</a>
-					</li>
-					<li class="item-dropdown">
-						<a onclick="changeMain('mais', 'mais.html')">Mais</a>
-						<ul class="dropdown">
-							<li>
-								<a href="galeria.html">Galeria</a>
-							</li>
-							<li>
-								<a href="processo-seletivo.html">Processo Seletivo</a>
-							</li>
-							<li>
-								<a href="fique-por-dentro.html">Fique por Dentro!</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Main -->
-		<div id="main" class="main"></div>
-
-		<footer class="flex">
-			<div class="footer-content">
-				<div class="footer-title flex-center column">
-					<img
-						src="/assets/images/logo-liga.png"
-						alt="mulher desenhada em um escudo"
-						class="logo"
-					/>
+		<div class="site">
+			<header class="site__header flex-center">
+				<!-- Logo e Titulo -->
+				<div class="header-title flex-center">
+					<a 								href="#"
+								class="js-change-main"
+								data-section="a-liga"
+								data-file="a-liga.html">
+						<img
+							src="/assets/images/logo-liga-escudo.png"
+							alt="mulher desenhada em um escudo"
+							class="logo"
+						/>
+					</a>
 					<h1 class="title">LIGA FEMININA DE TI</h1>
 				</div>
 
-				<span class="footer-rights"
-				>Copywrite & Copy : 2025 | All Right Reserved by Liga Feminina
-				da UVV</span>
-			</div>
-		</footer>
+				<!-- Menu -->
+				<nav class="header-menu">
+					<ul>
+						<li class="item-dropdown">
+							<a
+								href="#"
+								class="js-change-main"
+								data-section="a-liga"
+								data-file="a-liga.html"
+								>A Liga</a
+							>
+							<ul class="dropdown">
+								<li class="dropdown-item">
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="a-liga"
+										data-file="a-liga.html"
+										data-target="a-liga__sobre"
+										>Sobre</a
+									>
+								</li>
+								<li class="dropdown-item">
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="a-liga"
+										data-file="a-liga.html"
+										data-target="a-liga__valores"
+										>Valores</a
+									>
+								</li>
+								<li class="dropdown-item">
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="a-liga"
+										data-file="a-liga.html"
+										data-target="a-liga__destaques"
+										>Destaques</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="js-change-main"
+								data-section="integrantes"
+								data-file="integrantes.html"
+								>Integrantes</a
+							>
+						</li>
+						<li class="item-dropdown">
+							<a
+								href="#"
+								class="js-change-main"
+								data-section="mais"
+								data-file="mais.html"
+								>Mais</a
+							>
+							<ul class="dropdown">
+								<li>
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="mais"
+										data-file="mais.html"
+										data-target="mais__galeria"
+										>Galeria</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="mais"
+										data-file="mais.html"
+										data-target="mais__processo-seletivo"
+										>Processo Seletivo</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="js-change-main"
+										data-section="mais"
+										data-file="mais.html"
+										data-target="mais__fique-por-dentro"
+										>Fique por Dentro!</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main" class="site__main"></div>
+
+			<footer class="site__footer flex">
+				<div class="footer-content">
+					<div class="footer-title flex-center column">
+						<img
+							src="/assets/images/logo-liga.png"
+							alt="mulher desenhada em um escudo"
+							class="logo"
+						/>
+						<h1 class="title">LIGA FEMININA DE TI</h1>
+					</div>
+
+					<span class="footer-rights"
+						>Copywrite & Copy : 2025 | All Right Reserved by Liga
+						Feminina da UVV</span
+					>
+				</div>
+			</footer>
+		</div>
 	</body>
-	<script src="/assets/js/main.js"></script>
+	<script type="module" src="/assets/js/main.js"></script>
 </html>
