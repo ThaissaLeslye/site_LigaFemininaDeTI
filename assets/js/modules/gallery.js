@@ -1,5 +1,5 @@
 export function appendImages() {
-  fetch("/assets/data/imagens-galeria.json")
+  fetch("./assets/data/imagens-galeria.json")
     .then((response) => response.json())
     .then((imageLinks) => {
       const gallery = document.getElementById("galeria");

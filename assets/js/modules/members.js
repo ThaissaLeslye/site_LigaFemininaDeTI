@@ -1,5 +1,5 @@
 export function renderMembersPanel() {
-  fetch("/assets/data/membros.json")
+  fetch("./assets/data/membros.json")
     .then((response) => response.json())
     .then((data) => {
       const painel = document.getElementById("painel");
